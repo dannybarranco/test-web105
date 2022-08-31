@@ -1,0 +1,35 @@
+{
+	"uploadOnSave": false,
+	"autoDelete": true,
+	"checkGitignore": false,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*"
+	],
+	"targets": [
+		{
+			"name": "Web 105 FTP",
+			"type": "ftp",
+			"host": "ftp.dbarranco.mccdgm.net",
+			"port": 21,
+			"user": "dbarranco",
+			"password": "Javascript22",
+			"dir": "/public_html/web105"
+		},
+		{
+			"name": "web 105 SFTP",
+			"type": "sftp",
+			"host": "ftp.dbarranco.mccdgm.net",
+			"port": 22,
+			"user": "dbarranco",
+			"password": "Javascript22",
+			"dir": "/public_html/web105",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
